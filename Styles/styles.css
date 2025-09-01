@@ -1,0 +1,404 @@
+/*Variables*/
+:root {
+    --color-primario: #0f0f0f;
+    --color-secundario: #fffefe;
+    --color-terciario: #e3002d;
+}
+:root[data-bs-theme="dark"] {
+    --bs-body-bg: #262627; /* Fondo general */
+    --bs-body-color: #e0e0e0; /* Texto */
+}
+
+/*Estilos del Header*/
+.encabezado {
+    background-color: var(--color-primario);
+    color: var(--color-secundario);
+    font-size: 18px;
+    padding: 5px;
+}
+
+.header-icon {
+    height: 40px;
+    width: auto;
+    object-fit: contain;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/*Divisores customizados*/
+.custom-divider {
+    border: none;
+    height: 3px;
+    background-color: var(--color-terciario);
+    margin-top: 50px;
+    margin-bottom: 50px;
+    opacity: 1;
+}
+
+.custom-divider-secondary{
+    border: none;
+    height: 2px;
+    background-color: var(--color-terciario);
+    opacity: 1;
+}
+
+/*Estilos para Botones*/
+.btn {
+    border: none;
+    background-color: var(--color-terciario);
+    color: var(--color-secundario);
+    transition: transform 0.2s ease; 
+}
+
+.btn:hover {
+    background-color: var(--color-terciario);
+    color: var(--color-secundario);
+    transform: scale(1.1);
+}
+
+.btn:active {
+    transform: scale(0.9);
+}
+
+.btn:focus {
+    background-color: #8a001b; 
+}
+
+.btn.btn-press {
+    transition: transform .15s ease, background-color .15s ease, color .15s ease, border-color .15s ease;
+    will-change: transform;
+}
+
+.btn-primary.btn-press {
+    --bs-btn-active-bg: #8a001b;
+    --bs-btn-active-border-color: #e3002d; 
+    --bs-btn-active-color: #fff;
+}
+
+/*Carrusel*/
+.carousel-control-prev.red .carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23dc3545' viewBox='0 0 16 16'%3E%3Cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L6.707 7l4.647 4.646a.5.5 0 0 1-.708.708l-5-5a.5.5 0 0 1 0-.708l5-5a.5.5 0 0 1 .708 0z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-next.red .carousel-control-next-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23dc3545' viewBox='0 0 16 16'%3E%3Cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l5 5a.5.5 0 0 1 0 .708l-5 5a.5.5 0 0 1-.708-.708L9.293 7 4.646 2.354a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E");
+}
+
+#reviewsCarousel .carousel-control-prev,
+#reviewsCarousel .carousel-control-next {
+    width: auto; 
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.carousel-control-prev:focus,
+.carousel-control-next:focus {
+    outline: none !important;
+}
+
+#reviewsCarousel .carousel-control-prev {
+    left: 25%;
+}
+
+#reviewsCarousel .carousel-control-next {
+    right: 25%;
+}
+
+/*Estilos para links del Navegador*/
+
+.nav-pills .nav-link {
+    color: var(--color-secundario);
+}
+
+.nav-pills .nav-link:hover {
+  background-color: #3e3e3ebf; 
+}
+
+.nav-pills .nav-link.active {
+    background-color: var(--color-terciario); 
+    color: white; 
+}
+
+.nav-pills .nav-link:focus {
+    background-color: #3e3e3ebf;
+}
+
+/*Estilos para el Footer*/
+footer {
+    background-color: var(--color-primario);
+    color: var(--color-secundario);
+}
+
+footer.with-Margin{
+    margin-top: 60px;
+}
+
+/*Estilos para Form-Chek*/
+.form-check-input:checked {
+    background-color: var(--color-terciario); 
+    border-color: var(--color-terciario);
+}
+
+.form-check-input:focus {
+    box-shadow: 0 0 0 0.25rem #e3002d4c;
+}
+
+body {
+    margin: 0; /* siempre útil */
+}
+
+/* Por defecto, las páginas con header */
+body.con-header {
+    padding-top: 60px;
+}
+
+/* Para las páginas sin header */
+body.sin-header {
+    padding-top: 0;
+}
+
+/*Section*/
+section {
+    scroll-margin-top: 70px;
+}
+
+/*Focus*/
+:focus {
+    box-shadow: none !important; 
+}
+
+/*Estilos del footer*/
+/*nav-link*/
+footer .nav-link:hover {
+    color: var(--color-terciario);
+}
+
+footer .nav-link:active {
+    color: var(--color-terciario);
+}
+
+footer .nav-link:focus {
+    color: var(--color-terciario);
+}
+
+/*Icons*/
+.footer-icons a {
+    color: var(--color-secundario); /* color normal */
+    transition: color 0.3s ease;
+    font-size: 24px;
+}
+
+.footer-icons a:hover {
+    color: var(--color-terciario); /* color al pasar el mouse */
+}
+
+.footer-icons a:focus {
+    outline: none !important;
+    color: var(--color-terciario); /* color al pasar el mouse */
+}
+/*Texto*/
+footer .text {
+    color: var(--color-secundario);
+}
+
+/*Estilos de Imagenes*/
+img.img_1-1{
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
+}
+
+img.img_16-9{
+    aspect-ratio: 16 / 9;
+}
+
+img.contain {
+    object-fit: contain;
+}
+
+img.cover {
+    object-fit: cover;
+}
+
+img.rounded {
+    border-radius: 7%
+}
+
+img.img_Perfil {
+    object-fit: cover; 
+    height: 80%; 
+    width: 80%; 
+    border-radius: 10%;
+}
+
+img.img_Perfil_Big {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 10%;
+}
+/*
+Carrusel*/
+#myCarousel .carousel-item img {
+    height: 500px; /* Cambia este valor para ajustar la altura */
+    object-fit: cover;  /*Hace que la imagen llene el espacio recortando si es necesario */
+}
+
+/*Estilos param imagenes de fondo*/
+
+.section-fondo {
+    background-image: url("../Multimedia/PixelCity.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white; /* Cambia texto a blanco */
+}
+
+.section_background_2 {
+    background-image: url("../Multimedia/Background_2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;  /*Cambia texto a blanco */
+}
+
+.section_background_3 {
+    background-image: url("../Multimedia/Background_3.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;  /*Cambia texto a blanco */
+}
+
+/*Estilos de Videos*/
+.video_16-9 {
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    width: 100%;
+}
+
+/*Estilos de Texto*/
+.Subtitle {
+    color: var(--color-terciario);
+}
+
+/*Carrusel*/
+.description-carrousel {
+    width: 40%;
+    background-color: rgba(0, 0, 0, 0.6);
+    font-size: 18px;
+    text-align: justify;
+    padding: 10px 15px;
+    color: var(--color-secundario);
+    border-radius: 12px; /*  aquí se redondean las esquinas */
+}
+
+.carousel-title {
+    text-transform: uppercase;
+    color: var(--color-secundario);
+}
+
+/*Estilos de Parrafos*/
+p.text_Center {
+    font-size: 18px;
+    text-align: center;
+}
+
+p.text_Justify {
+    font-size: 18px;
+    text-align: justify;
+}
+
+.start_Margin{
+    margin-top: 50px;
+}
+
+/*Modal*/
+.modal-body img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/*HTML*/
+html {
+    scroll-behavior: smooth;
+}
+
+.divider-text {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-bottom: 3px solid var(--color-terciario);
+}
+
+/* Para los items seleccionados del dropdown */
+.dropdown-menu .dropdown-item.active,
+.dropdown-menu .dropdown-item:active {
+    background-color: var(--color-terciario) !important; /* tu color custom */
+    color: #fff !important; /* para contraste */
+}
+
+/* Para el focus (quitamos azul) */
+.dropdown-menu .dropdown-item:focus {
+    background-color: var(--color-terciario) !important;
+    color: #fff !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.hero-banner {
+    height: 100vh; /* ocupa toda la pantalla */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+/* filtro oscuro para que resalte el texto */
+.hero-banner::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+/* para que el contenido quede por encima del overlay */
+.hero-banner .container {
+    position: relative;
+    z-index: 1;
+}
+
+.bg-1 {
+    background-image: url("../Multimedia/Background_2.jpg");
+}
+
+.bg-2 {
+    background-image: url("../Multimedia/Background_3.png");
+}
+
+/* botón CTA */
+.btn-cta {
+    background-color: var(--color-secundario);
+    color: var(--color-terciario);
+    border-radius: 50px;
+    padding: 12px 28px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-cta:hover {
+    background-color: var(--color-terciario);
+    color: var(--color-secundario);
+}
+
+.thank-icon {
+    object-fit: cover;
+    height: 30%;
+    width: 30%;
+}
+

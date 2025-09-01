@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Portafolio</title>
+    <link rel="stylesheet" href="Bootstrap/bootstrap-icons/bootstrap-icons.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="Styles/styles.css">
+    <meta name="description" content="Esta página es un portafolio que muestra mis trabajos" />
+    <meta name="author" content="Deyson Buitrago" />
+</head>
+<body class="con-header">
+    <header>
+        <section class="encabezado">
+            <div class="d-flex ">
+                <div class="p-2 flex-grow-1 d-flex align-items-center" id="Title">
+                    <a class="nav-link" aria-current="page" href="index.html"><strong class="me-2">Deyson Buitrago</strong></a>
+                    <img src="Multimedia/Icon.png" alt="Pixel Art" class="header-icon">
+                </div>
+                <div class="p-2">
+                    <ul class="nav justify-content-end nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active  btn-danger" aria-current="page" href="About_me.html">Sobre mí</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="Pixel_art.html">Pixel Art</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="Gallery.html">Galería</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="Contact_me.html">Contáctame</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+    </header>
+    <main>
+        <!--Boton para cambio de tema-->
+        <div class="position-fixed bottom-0 end-0 p-3 z-3">
+            <div class="btn-group dropup">
+                <button type="button" id="theme-toggle" class="btn  btn-primary btn-press dropdown-toggle "
+                        data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                    <i id="theme-icon" class="bi bi-circle-half"></i>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end shadow">
+                    <li><button type="button" class="dropdown-item" data-bs-theme-value="light"><i class="bi bi-sun-fill"></i> Claro</button></li>
+                    <li><button type="button" class="dropdown-item" data-bs-theme-value="dark"><i class="bi bi-moon-fill"></i> Oscuro</button></li>
+                    <li><button type="button" class="dropdown-item" data-bs-theme-value="auto"><i class="bi bi-circle-half"></i> Automático</button></li>
+                </ul>
+            </div>
+        </div>
+
+        <section id="Start" class="section_background_3">
+            <div class="py-5 text-center container">
+                <div class="row py-lg-5">
+                    <div class="col-lg-6 col-md-8 mx-auto">
+                        <h1>Presentación</h1>
+                        <p class="text_Center">
+                            Conoce un poco de mi historia, mi trayectoria, como empecé con el Pixel Art,
+                            mis referencias, etc...
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="WhoAmI" class="container col-md-7">
+            <div class="row align-items-center">
+                <div class=" col-md-12">
+                    <hr class="featurette-divider custom-divider-secondary">
+                </div>
+            </div>
+
+            <div class="row align-items-center ">
+                <!-- Columna de texto -->
+                <div class="col-md-8">
+                    <h2>¿Quién soy?</h2>
+                    <br />
+                    <p class="text_Justify">
+                        Soy un artista digital especializado en pixel art, un estilo que combina simplicidad
+                        visual con gran detalle y expresividad. Mi trabajo se enfoca en crear mundos vibrantes,
+                        personajes memorables y elementos visuales que transmiten emociones e historias, píxel
+                        a píxel. A lo largo de mi trayectoria he desarrollado ilustraciones, animaciones y recursos
+                        para videojuegos, adaptándome a distintos estilos y paletas de color según las necesidades
+                        del proyecto. Este portafolio reúne una selección de mis trabajos más representativos, en
+                        los que se refleja mi pasión por el arte retro, la atención al detalle y la creatividad aplicada al
+                        diseño visual.
+                    </p>
+                </div>
+
+                <!-- Columna de imagen -->
+                <div class="container col-md-4">
+                    <div class="row justify-content-center align-items-center">
+                        <img src="Multimedia/Perfil.jpg"
+                             alt="Perfil"
+                             class="img-fluid img_Perfil" />
+                    </div>
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class=" col-md-12">
+                    <hr class="featurette-divider custom-divider-secondary">
+                </div>
+            </div>
+        </section>
+        <section id="MyApproach">
+            <div class="container col-md-7">
+                <h2>Mi historia con el Pixel Art</h2>
+                <br />
+                <p class="text_Justify">
+                    Me apasiona recrear mundos retro con un estilo moderno, creando desde personajes hasta escenarios completos.
+                    Desde pequeño tuve acercamientos al pixel art con los juegos retro. Mi interes
+                    por los juegos y por el arte fue creciendo a la par que mi edad, poco a poco me fui adentrando en el
+                    mundo del pixel art, y con un poco de práctica llegue al punto en el que estoy ahora.
+                    <br /><br />
+                    Inicie en el mundo como todos, sabiendo poco, pero con muchas ganas de mejorar, empecé practicando con paisajes
+                    y con algunos personajes que me gustaban de la series que veia. Podrás ver unos ejemplos a continuación:
+                </p>
+                <div class="album py-4">
+                    <div class="container col-md-9" data-aos="fade-up">
+
+                        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                            <div class="col">
+                                <div class="text-center">
+                                    <img src="Multimedia/Arbol.png"
+                                         class="card-img-top img_1-1 rounded"
+                                         alt="Pixel Art Animado" />
+                                    <span class="text-body-secondary">(Árbol)</span>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="text-center">
+                                    <img src="Multimedia/Nube.png"
+                                         class="card-img-top img_1-1 rounded"
+                                         alt="Pixel Art Animado" />
+                                    <span class="text-body-secondary">(Nubes)</span>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="text-cente">
+                                    <img src="Multimedia/Hinata.png"
+                                         class="card-img-top img_1-1 rounded"
+                                         alt="Pixel Art Animado" />
+                                    <span class="text-body-secondary">(Hinata-Haikyuu)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <p class="text_Justify" data-aos="fade-up">
+                    Empecé a tomar algunos cursos Online para mejorar, desde tutoriales en Youtube, donde debo decir que hubo varios
+                    acerca del uso del color y el HUE Shifting (Técnica para elegir un colores que contrasten) que me sirvieron muchisimo,
+                    ya que como un buen novato, no sabía manejar muy bien los colores y las paletas con las que trabajaba, tambien empecé
+                    a practicar con personajes de juegos a los que jugaba, y traté tambien con los Paquetes de Texturas, que son texturas
+                    personalizadas que puedes agregarb a tu juego, yo por ejemplo empecé dibujando texturas de Herramientas y Armas para
+                    Minecraft, Estos Ejemplos podrás verlos en la galería. A continuación podrás ver la diferencia de algunos sprites
+                    luego de estudiar el color:
+                </p>
+                <div class="album py-4">
+                    <div class="container" data-aos="fade-up">
+
+                        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4">
+                            <div class="col">
+                                <div class="text-center">
+                                    <img src="Multimedia/Talon_0.png"
+                                         class="card-img-top img_1-1 rounded"
+                                         alt="Pixel Art Animado" />
+                                    <span class="text-body-secondary">(Sin HUE Shifting)</span>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="text-center">
+                                    <img src="Multimedia/Talon_color.png"
+                                         class="card-img-top img_1-1 rounded"
+                                         alt="Pixel Art Animado" />
+                                    <span class="text-body-secondary">(Con HUE Shifting)</span>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="text-center">
+                                    <img src="Multimedia/Aurelio_0.png"
+                                         class="card-img-top img_1-1 rounded"
+                                         alt="Pixel Art Animado" />
+                                    <span class="text-body-secondary">(Sin HUE Shifting)</span>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="text-center">
+                                    <img src="Multimedia/Aurelio.png"
+                                         class="card-img-top img_1-1 rounded"
+                                         alt="Pixel Art Animado" />
+                                    <span class="text-body-secondary">(Con HUE Shifting)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="Experience">
+            <div class="container col-md-7">
+                <div class="row align-items-center">
+                    <div class=" col-md-12">
+                        <hr class="featurette-divider custom-divider-secondary">
+                    </div>
+                </div>
+                <h2>Experiencia</h2>
+                <br />
+                <p class="text_Justify" data-aos="fade-up">
+                    Mis inicios en el pixel art fueron solitarios, es decir mi manera de aprender fue totalmente empirica,
+                    aprendiendo de errores y tratando de solucionarlos, pero pronto me di cuenta que necesitaba aprender
+                    cosas y no sabia como, esto me llevo en la busqueda de cursos e información acerca de la creación de
+                    pixel art. Tome los siguientes cursos de Domestika:
+                </p>
+                <br />
+                <h5>Introducción al diseño de personajes en pixel art</h5>
+                <br />
+                <p class="text_Justify" data-aos="fade-up">
+                    Curso enfocado en la creación de personajes y gráficos en Pixel Art para videojuegos en 2D. A través de
+                    ejercicios prácticos aprendí a trabajar a nivel de píxel, replicando la estética clásica de los videojuegos
+                    retro con herramientas modernas como Pyxel Edit. El curso estuvo guiado por Daniel Benítez, cofundador del
+                    estudio Fourattic, y me permitió adquirir bases sólidas para diseñar sprites y animaciones con un estilo old
+                    school adaptado a proyectos actuales.
+                </p>
+                <div class="album py-4">
+                    <div class="container" data-aos="fade-up">
+
+                        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                            <div class="col">
+                                <div class="text-center">
+                                    <img src="Multimedia/Archer1.png"
+                                         class="card-img-top img_1-1 rounded"
+                                         alt="Pixel Art Animado" />
+                                    <span class="text-body-secondary">(Creación de un Personaje)</span>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="text-center">
+                                    <img src="Multimedia/Archer2.png"
+                                         class="card-img-top img_1-1 rounded"
+                                         alt="Pixel Art Animado" />
+                                    <span class="text-body-secondary">(Creación de un paisaje)</span>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="text-center">
+                                    <img src="Multimedia/Archer-final.png"
+                                         class="card-img-top img_1-1 rounded"
+                                         alt="Pixel Art Animado" />
+                                    <span class="text-body-secondary">(Proyecto final)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="my-4" />
+                <h5>Animación de personajes en pixel art para videojuegos</h5>
+                <br />
+                <p class="text_Justify" data-aos="fade-up">
+                    Curso orientado a la animación de personajes y escenarios en Pixel Art utilizando Pyxel Edit. Aprendí
+                    a dar vida a sprites mediante técnicas de animación cuadro por cuadro, aplicando principios como timing,
+                    anticipación y motion blur. Además, reforcé procesos clave como la exportación y optimización de sprite
+                    sheets, adquiriendo habilidades prácticas para proyectos de videojuegos en 2D.
+                    A continuación encontrarás algunas animaciones desarrolladas en el curso:
+                </p>
+                <div class="album py-4">
+                    <div class="container" data-aos="fade-up">
+
+                        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                            <div class="col">
+                                <div class="text-center">
+                                    <img src="Multimedia/Walking.gif"
+                                         class="card-img-top img_1-1 rounded"
+                                         alt="Pixel Art Animado" />
+                                    <span class="text-body-secondary">(Animación "walking")</span>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="text-center">
+                                    <img src="Multimedia/Jump.gif"
+                                         class="card-img-top img_1-1 rounded"
+                                         alt="Pixel Art Animado" />
+                                    <span class="text-body-secondary">(Animación "jump")</span>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="text-center">
+                                    <img src="Multimedia/Waiting.gif"
+                                         class="card-img-top img_1-1 rounded"
+                                         alt="Pixel Art Animado" />
+                                    <span class="text-body-secondary">(Animación "idle")</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="References">
+            <div class="container col-md-7">
+                <div class="row align-items-center">
+                    <div class=" col-md-12">
+                        <hr class="featurette-divider custom-divider-secondary">
+                    </div>
+                </div>
+                <h2>Mis Referentes</h2>
+                <br />
+                <p class="text_Justify" data-aos="fade-up">
+                    El Pixel Art no solo es una técnica, también es un lenguaje artístico con una historia y una comunidad
+                    que lo mantiene vivo. En esta sección comparto a mis principales referentes: artistas y creadores que me
+                    inspiran con su estilo, su creatividad y su forma de llevar el arte en píxeles a nuevos niveles. Gracias
+                    a ellos, he podido nutrir mi propio camino en el diseño y la animación.
+                </p>
+                <div class="album py-4">
+                    <div class="container ">
+                        <div class="col">
+                            <div class="text-center" data-aos="fade-up">
+                                <video autoplay loop muted playsinline class="video_16-9">
+                                    <source src="Multimedia/Frieren.mp4" type="video/mp4">
+                                    Tu navegador no soporta video en HTML5.
+                                </video>
+                                <span class="text-body-secondary">(Bryan Heemskerk)</span>
+                            </div>
+                        </div>
+                        <hr class="my-4" />
+                        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3" data-aos="fade-up">
+                            <div class="col">
+                                <div class="text-center">
+                                    <img src="Multimedia/Gato.png"
+                                         class="card-img-top img_1-1 rounded"
+                                         alt="Pixel Art Animado" />
+                                    <span class="text-body-secondary">(DecomposedMaw)</span>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="text-center">
+                                    <img src="Multimedia/Flor.png"
+                                         class="card-img-top img_1-1 rounded"
+                                         alt="Pixel Art Animado" />
+                                    <span class="text-body-secondary">(Evsailey)</span>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="text-center">
+                                    <img src="Multimedia/Mujer.png"
+                                         class="card-img-top img_1-1 rounded"
+                                         alt="Pixel Art Animado" />
+                                    <span class="text-body-secondary">(lvl374)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="py-5 with-Margin">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-md-2 mb-3">
+                    <h5>Sobre mi</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#Start" class="nav-link p-0 text">Inicio</a></li>
+                        <li class="nav-item mb-2"><a href="#WhoAmI" class="nav-link p-0 text">¿Quién soy?</a></li>
+                        <li class="nav-item mb-2"><a href="#MyApproach" class="nav-link p-0 text">Mi pixel art</a></li>
+                        <li class="nav-item mb-2"><a href="#Experience" class="nav-link p-0 text">Mi experiencia</a></li>
+                        <li class="nav-item mb-2"><a href="#References" class="nav-link p-0 text">Mis referentes</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-2 mb-3">
+                    <h5>Pixel Art</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="Pixel_art.html#Start" class="nav-link p-0 text">Inicio</a></li>
+                        <li class="nav-item mb-2"><a href="Pixel_art.html#WhatIs" class="nav-link p-0 text">¿Qué es?</a></li>
+                        <li class="nav-item mb-2"><a href="Pixel_art.html#History" class="nav-link p-0 text">Historia</a></li>
+                        <li class="nav-item mb-2"><a href="Pixel_art.html#Concepts" class="nav-link p-0 text">Conceptos</a></li>
+                        <li class="nav-item mb-2"><a href="Pixel_art.html#PixelGames" class="nav-link p-0 text">Videojuegos</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-2 mb-3">
+                    <h5>Galería</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="Gallery.html#Inicio" class="nav-link p-0 text">Inicio</a></li>
+                        <li class="nav-item mb-2"><a href="Gallery.html#MisTrabajos" class="nav-link p-0 text">Mis Trabajos</a></li>
+                        <li class="nav-item mb-2"><a href="Gallery.html#Sprites" class="nav-link p-0 text">Sprites(Items)</a></li>
+                        <li class="nav-item mb-2"><a href="Gallery.html#Animaciones" class="nav-link p-0 text">Animaciones</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-5 offset-md-1 mb-3">
+                    <form action="https://formsubmit.co/deysonstevenbui@gmail.com" method="POST">
+                        <h5>Suscríbete</h5>
+                        <p>Recibe en tu correo los últimos pixel arts, tips y recursos gratuitos.</p>
+                        <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                            <label for="newsletter1" class="visually-hidden">Correo electrónico</label>
+                            <input id="newsletter1" type="email" class="form-control" name="email" placeholder="Correo electrónico" required>
+                            <button class="btn btn-primary btn-press" type="submit">Suscribir</button>
+                        </div>
+
+                        <!-- Configuración extra -->
+                        <input type="hidden" name="_captcha" value="false"> <!-- desactiva captcha -->
+                        <input type="hidden" name="_next" value="https://deyson-st.github.io/paginaWeb/Thank_you.html"> <!-- redirección tras enviar -->
+                    </form>
+                </div>
+            </div>
+            <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+                <p>© 2025 Company, Inc. All rights reserved.</p>
+                <ul class="list-unstyled d-flex footer-icons">
+                    <li class="ms-3">
+                        <a href="https://x.com/TSh1nigami" aria-label="X"><i class="bi bi-twitter-x"></i></a>
+                    </li>
+                    <li class="ms-3">
+                        <a href="https://www.facebook.com/deyson.buitrago.9" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                    </li>
+                    <li class="ms-3">
+                        <a href="https://www.instagram.com/p/DLWcZD0upAe/" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/Scripts.js"></script>
+</body>
+
+</html>
